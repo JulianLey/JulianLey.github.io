@@ -5,22 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julian's Website</title>
     <link rel="icon" type="image/x-icon" href="Images/favicon.png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            text-align: center;
-            margin: 0;
-            padding: 50px;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        p {
-            font-size: 1.2em;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <!--This is a very cumbersome way of writing comments.-->
 <body>
@@ -30,6 +15,7 @@
     <a href="https://julianley.com/myWebsite/" target="_blank">Another example Website</a> 
     <br><br><hr><br>
     <h2>3D Modeling</h2>
+    <h3 id="blenderHeader">Blender</h3> <!--You can make a link to this bookmark by doing <a href="blenderHeader">Link Text</a>-->
     <p style="color:rgb(255, 0, 0)">Here is an image of a donut I made following Blender Guru's tutorial on Youtube:</p>
     <img src="Images/donutImage.jpg" alt="Donut!" width="28%" height="28%">
     <br>
@@ -37,6 +23,7 @@
     <br><br>
     <hr>
     <br>
+    <div class="experiments">
     <b>Hey! This text is bold.<br></b>
     <strong>Hey! This text is strong.<br></strong>
     <i>Hey! This text is italic.<br></i>
@@ -45,11 +32,13 @@
     <small>Hey! This text is small.<br></small>
     <del>Hey! This text is deleted.<br></del>
     <ins>Hey! This text is inserted.<br></ins>
-    <p>Normal text<sub>Hey! This text is subscript.</sub><br></p>
-    <p>Normal text<sup>Hey! This text is superscript.</sup><br></p>
-    <p></p>
+    <span>Normal Text</span><sub>Hey! This text is subscript.</sub><br>
+    <span>Normal Text</span><sup>Hey! This text is superscript.</sup><br>
+    </div>
     <br>
     <a href="newPage/">Open another site using relative link</a>
+    <br><br>
+    <iframe src="https://julianley.com/myWebsite/" title="Here you can see the website that the first link opens up to" height="300" width="800" style="border:none;"></iframe>
     <br><br><br><br>
     <p>You can contact me here: </p>
     <a href="mailto:contact@julianley.com">contact@julianley.com</a>
