@@ -27,3 +27,8 @@ p {
     padding: 5px;
     text-align: center;
 }
+.imgage {
+    max-width: 100%;
+    max-height: 600px;
+    height: auto;
+}
