@@ -1,5 +1,4 @@
-body 
-{
+body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f9;
     color: #333;
@@ -12,16 +11,15 @@ h1 {
 p {
     font-size: 1.2em;
 }
-.experiments{
+.experiments {
     background-color: blanchedalmond;
-    color:black;
+    color: black;
     font-size: 0.8em;
     border: 2px solid black;
     margin: 20px;
-    padding:20px;
+    padding: 20px;
 }
-#blenderHeader
-{
+#blenderHeader {
     color: #515151;
     padding: 5px;
     text-align: center;
@@ -39,7 +37,7 @@ p {
     top: 0;
     text-align: left;
 }
-/*Navigation bar links*/
+/* Navigation bar links */
 .navbar a {
     float: left;
     display: block;
@@ -66,12 +64,13 @@ p {
 }
 @media (max-width: 800px) {
     .responsive-iframe {
+        width: 90%;
         height: 40vh;
     }
 }
 @media screen and (max-width: 800px) {
     .navbar a {
         float: none;
-        width: 100;
+        width: 100%;
     }
 }
