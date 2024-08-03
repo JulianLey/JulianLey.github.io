@@ -59,6 +59,16 @@ p {
     background-color: #a7a7a7;
     color: white;
 }
+.responsive-iframe {
+    width: 60%;
+    height: 50vh;
+    border: 2px solid rgb(203, 203, 203);
+}
+@media (max-width: 800px) {
+    .responsive-iframe {
+        height: 40vh;
+    }
+}
 @media screen and (max-width: 800px) {
     .navbar a {
         float: none;
