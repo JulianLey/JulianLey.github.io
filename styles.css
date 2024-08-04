@@ -7,8 +7,8 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    background-color: #EEEEEE;
+    color: #508C9B;
     text-align: center;
     margin: 0;
     padding-top: 50px; /* Adjust this to the height of your navbar */
@@ -49,7 +49,7 @@ p {
 
 .navbar {
     overflow: hidden;
-    background-color: #888888;
+    background-color: #201E43;
     position: fixed;
     width: 100%;
     top: 0;
@@ -72,19 +72,19 @@ p {
 }
 
 .navbar a:hover {
-    background-color: #ddd;
+    background-color: #508C9B;
     color: black;
 }
 
 .navbar a.active {
-    background-color: #a7a7a7;
+    background-color: #134B70;
     color: white;
 }
 
 .responsive-iframe {
     width: 60%;
     height: 50vh;
-    border: 2px solid rgb(203, 203, 203);
+    border: 2px solid #508C9B;
 }
 
 @media (max-width: 800px) {
@@ -104,7 +104,7 @@ p {
 }
 
 footer {
-    background-color: #888888;
+    background-color: #201E43;
     color: white;
     padding: 10px 0;
     width: 100%;
