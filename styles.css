@@ -29,11 +29,11 @@ body {
     color: #508C9B;
     text-align: center;
     margin: 0;
-    padding-top: 50px; /* Adjust this to the height of your navbar */
+    padding-top: 50px;
 }
 
 .content {
-    flex: 1; /* Ensures the content takes up the remaining space */
+    flex: 1;
 }
 
 h1 {
@@ -66,27 +66,31 @@ p {
 }
 
 .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
     background-color: #201E43;
     position: fixed;
     width: 100%;
     top: 0;
-    text-align: left;
+    text-align: center;
     transition: top 0.3s;
+    z-index: 1000;
+    height: 50px;
 }
 
 /* Navigation bar links */
 .navbar a {
-    float: left;
-    display: block;
+    display: inline-block;
     color: white;
-    text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    text-align: center;
 }
 
 .navbar a.right {
-    float: right;
+    margin-left: auto; 
 }
 
 .navbar a:hover {
@@ -99,6 +103,23 @@ p {
     color: white;
 }
 
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+    
+    .navbar a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar a.right {
+        margin-left: 0;
+    }
+}
+
 .responsive-iframe {
     width: 60%;
     height: 50vh;
@@ -107,17 +128,12 @@ p {
 
 @media (max-width: 800px) {
     body {
-        padding-top: 200px; /* Increased padding for smaller screens to accommodate stacked navbar */
+        padding-top: 200px;
     }
 
     .responsive-iframe {
         width: 90%;
         height: 40vh;
-    }
-
-    .navbar a {
-        float: none;
-        width: 100%;
     }
 }
 
@@ -137,4 +153,3 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
-
