@@ -4,6 +4,7 @@ body {
     color: #333;
     text-align: center;
     margin: 0;
+    padding-top: 60px; /* Adjust this to the height of your navbar */
 }
 h1 {
     color: #2c3e50;
@@ -32,10 +33,11 @@ p {
 .navbar {
     overflow: hidden;
     background-color: #888888;
-    position: sticky;
-    position: -webkit-sticky;
+    position: fixed;
+    width: 100%;
     top: 0;
     text-align: left;
+    transition: top 0.3s;
 }
 /* Navigation bar links */
 .navbar a {
@@ -63,12 +65,13 @@ p {
     border: 2px solid rgb(203, 203, 203);
 }
 @media (max-width: 800px) {
+    body {
+        padding-top: 200px;
+    }
     .responsive-iframe {
         width: 90%;
         height: 40vh;
     }
-}
-@media screen and (max-width: 800px) {
     .navbar a {
         float: none;
         width: 100%;
